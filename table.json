@@ -1,0 +1,29 @@
+[
+{
+"simpleName": "name1",
+"dataName": "table1",
+"pictureLink": "http://i.piccy.info/i9/d1998303b4b6f1cae26749c0ab87faed/1461311238/223998/1027417/824K5Ua.jpg",
+"attribute1": "value11",
+"attribute2": "value12",
+"attribute3": "value13",
+"attribute4": "value14"
+},
+{
+"simpleName": "name2",
+"dataName": "table2",
+"pictureLink": "http://i.piccy.info/i9/422fc92c31539de4221295537449c00d/1461311287/67882/1027417/fPhCiAg.jpg",
+"attribute1": "value21",
+"attribute2": "value22",
+"attribute3": "value23",
+"attribute4": "value24"
+},
+{
+"simpleName": "name3",
+"dataName": "table3",
+"pictureLink": "http://i.piccy.info/i9/0e8ec3e7e034966eb7b651c96e312525/1461311304/56290/1027417/pn5JMiT.jpg",
+"attribute1": "value31",
+"attribute2": "value32",
+"attribute3": "value33",
+"attribute4": "value34"
+}
+]

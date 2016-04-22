@@ -1,0 +1,32 @@
+#details {
+  visibility: hidden;
+  cursor: pointer;
+  padding: 5px;
+  width: 500px;
+}
+
+.left,
+.right {
+  display: inline;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+details summary::-webkit-details-marker {
+  visibility: hidden;
+}
+
+details summary {
+  cursor: pointer;
+  padding: 5px;
+}
+
+table {
+  width: 500px;
+}

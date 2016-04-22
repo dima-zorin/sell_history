@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+
+<head>
+  <script data-require="angular.js@1.5.3" data-semver="1.5.3" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<body ng-controller="MainController">
+  <select ng-model="list" ng-options="list.simpleName for list in baseList"></select>
+  <input type="button" name="button1" value="выбрать" ng-click="getSelected(list.dataName)" />
+  <br>
+
+  <img ng-src="{{testMass[0]['pictureLink']}}" title="{{testMass[0]['simpleName']}}"><br>
+  <input id="details" type="button" name="button2" ng-click="toggle()" value="подробно" />
+  <div ng-hide="toggled">
+    <table id="selectedTable" ng-repeat="selected in selected | orderBy: 'date'">
+      <tr>
+        <td>
+          <details>
+            <summary>
+              <div class="left" ng-bind="selected.date | date : 'dd.MM.y'"></div>
+              <div class="right" ng-bind="selected.quantity"></div>
+            </summary>
+            <div class="left" ng-bind="selected.name"></div>
+            <div class="right" ng-bind="selected.quantity"></div>
+          </details>
+        </td>
+
+      </tr>
+
+    </table>
+  </div>
+
+  <table id="selectedDetails" ng-repeat="details in testMass">
+    <tr>
+      <td>
+        <div>атрибут1</div>
+      </td>
+      <td>
+        <div ng-bind="details.attr1"></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div>атрибут2</div>
+      </td>
+      <td>
+        <div ng-bind="details.attr2"></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div>атрибут3</div>
+      </td>
+      <td>
+        <div ng-bind="details.attr3"></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div>атрибут4</div>
+      </td>
+      <td>
+        <div ng-bind="details.attr4"></div>
+      </td>
+    </tr>
+  </table>
+
+</body>
+
+</html>
